@@ -4,7 +4,7 @@ import styles from './imageHeroPreview.module.css'
 const imageHero = (props) => {
     return (
         <div>
-            <img className={styles.Spacing} src={"http://via.placeholder.com/600x300?text=" + props.image} alt="Main Header" />
+            <img onClick={props.click} className={styles.Spacing} src={"http://via.placeholder.com/560x300?text=" + "hero-" + props.schoolName + ".jpg"} alt="Main Header" />
         </div>
     )
 }

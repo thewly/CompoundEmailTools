@@ -11,7 +11,7 @@ const schoolLink = (props) => {
                     className="form-control"
                     type="text"
                     onChange={props.change}
-                    value={props.name}
+                    value={props.value}
                     name="schoolLink"
                 />
             </div>

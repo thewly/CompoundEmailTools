@@ -1,3 +1,4 @@
+const EE_SS_GF = `
 <!doctype html>
 <html>
 <head>
@@ -66,8 +67,8 @@ a[x-apple-data-detectors] {
 	text-decoration: none !important;
 }
 .button-td:hover, .button-a:hover {
-	background: #555555 !important;
-	border-color: #555555 !important;
+	background: #000000 !important;
+	border-color: #000000 !important;
 }
 </style>
 <!--END : Button CSS -->
@@ -89,17 +90,16 @@ a[x-apple-data-detectors] {
 		<!-- Logo Header : BEGIN -->
 		<!-- Logo Header : END -->
 		<!-- Hero : BEGIN -->
-		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
-			<tr><td><a href="https://www.balfour.com/schoollink?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-hero"><img src="images/hero-schoolname.jpg" alt="Shop your school's curated collection at Balfour.com" style="max-width: 100%; height: auto; border:0;"/></a></td></tr>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 100%;" bgcolor="#ffffff">
+			<tr><td><a href="https://www.balfour.com/schoollink?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-hero"><img src="images/1-hero_schoolname.jpg" alt="Shop your school's curated collection at Balfour.com" style="max-width: 100%; height: auto; border:0;"/></a></td></tr>
 		</table>
 		<!-- Hero : END -->
 		<!-- Copy Body : BEGIN -->
 		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
-			<tr><td style="background-color: #ffffff; padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;" bgcolor="#ffffff">
-				  <h2 style="line-height: 1.3">It's time to order your Official [School] Ring!</h2>
-				  Be part of a timeless [Nickname] tradition. Order your personalized ring to show your pride and celebrate your success with fellow classmates.<br>
-<br>
-<center>
+			<tr><td style="background-color: #ffffff; padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;" bgcolor="#ffffff">
+				  <h2 style="line-height: 1.3; text-align: center">It's time to order your Official [School] Ring!</h2>
+<center>Be part of a timeless [Nickname] tradition. Order your personalized ring to show your pride and celebrate your success with fellow classmates.</center>
+<br><center>
 				<table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto; background:#ffffff;" bgcolor="#ffffff">
                         <tr>
                           <td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="https://www.balfour.com/shop/jewelry/rings/college-class-rings?smi=222222&utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_ringbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"> 
@@ -111,29 +111,42 @@ a[x-apple-data-detectors] {
 <center>
 				  <span style="line-height: 26px; text-align: center;"><span style="font-size: 125%;">Or visit your on-campus representative:</span><br><strong><span style="font-size: 125%;">ONE DAY ONLY</span></strong>
 					  <br>
-					  **Day**, **Month** **#**<br>
-					  **00** **a.m.** &ndash; **00** **p.m.**<br>
-					  **Location**<br>
+					  Day, Month #<br>
+					  00 a.m. &ndash; 00 p.m.<br>
+					  Location<br>
 					  <br>
                   </span>
 				</center>
-				<strong>Each Ring Includes:</strong>	
-				<ul>
-				  <li>Optional interest-free payment plans</li>
-				  <li>A lifetime warranty with free resizing, polishing and cleaning</li>
-				  <li>A Ring Loss Protection Plan</li>
-				</ul>
+				<strong>Each Ring Includes:</strong>			
+				<ul><li>Optional interest-free payment plans</li>
+				<li>A lifetime warranty with free resizing, polishing and cleaning</li>
+				<li>A Ring Loss Protection Plan</li></ul>
 				&nbsp;<br>
-				<center><span style="color: #555555; font-size: 15px; font-family: sans-serif; text-align: center;"><strong>Shop your curated collection:</strong></span></center>
 				</td>
 			</tr>
 		</table>
 		<!-- Copy Body : END -->
 		<!-- Panel Pack : BEGIN -->
-		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
-			<tr><td><a href="https://www.balfour.com/schoollink?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img_panelpack"><img src="images/panels_schoolname.png" alt="Shop your school's curated collection at Balfour.com." style="max-width: 100%; height: auto; border: 0;"/></a>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 100%;" bgcolor="#ffffff">
+			<tr>
+			  <td><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-announcements"><img src="images/2-annc_schoolname.jpg" style="max-width: 100%; height: auto; border: 0;"/></a>
 				<br>
-				&nbsp;<br></td></tr>
+			  &nbsp;<br></td></tr>
+			
+		</table>
+		<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" bgcolor="#ffffff">
+			<tr><td style="background-color: #ffffff; padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 16px; mso-height-rule: exactly; line-height: 22px; color: #000000;" bgcolor="#ffffff">
+			  						<table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto; background:#ffffff;" bgcolor="#ffffff">
+                        <tr>
+                          <td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222&utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->ORDER YOUR ANNOUNCEMENTS <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                            </a></td>
+							</tr>
+							
+                      </table><br>
+				
+				</td>
+			</tr>
 		</table>
 		<!-- Panel Pack : END -->
 			<!-- Footer : BEGIN -->
@@ -150,19 +163,7 @@ a[x-apple-data-detectors] {
 		</tr>
 	</table>
 </body>
-
-<script>
-	let SchoolLink = "";
-	let SchoolName = "";
-	let InHandDate = "";
-	let SMI = "";
-	let Day = "";
-	let Month = "";
-	let DayOfMonth = "";
-	let StartTime = "";
-	let EndTime = "";
-	let Location = "";
-	
-</script>
-
 </html>
+`;
+
+export default EE_SS_GF;

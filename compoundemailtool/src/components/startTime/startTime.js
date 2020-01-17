@@ -1,11 +1,11 @@
 import React from 'react';
 
-const time = (props) => {
+const startTime = (props) => {
     return (
         <div>
             <div className="row">
                 <div className="col-md-3">
-                    <h5>Time:</h5>
+                    <h5>Start Time:</h5>
                 </div>
                 <div className="col-md-9">
                     <input
@@ -13,7 +13,7 @@ const time = (props) => {
                         type="text"
                         onChange={props.change}
                         value={props.value}
-                        name="time"
+                        name="startTime"
                     />
                 </div>
             </div>
@@ -21,4 +21,4 @@ const time = (props) => {
     )
 }
 
-export default time;
+export default startTime;
