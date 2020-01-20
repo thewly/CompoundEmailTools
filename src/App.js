@@ -143,6 +143,10 @@ class App extends Component {
     result = result.replace(SMIregex, this.state.SMI);
     result = result.replace("It's time to order your Official [School] Ring!", this.state.headline);
     result = result.replace('Be part of a timeless [Nickname] tradition. Order your personalized ring to show your pride and celebrate your success with fellow classmates.', this.state.bodyCopy);
+    result = result.replace("ALUMNI PRODUCTS", this.state.col1Headline);
+    result = result.replace("Official Ring", this.state.col2Headline);
+    result = result.replace("Display your achievement with officially-licensed gifts, tailgating gear, jewelry, accessories and more.", this.state.col1BodyCopy);
+    result = result.replace("Order your personalized ring to show your pride and celebrate your success with fellow classmates.", this.state.col2BodyCopy);
     result = result.replace('ONE DAY ONLY', this.state.subhead);
     result = result.replace('Day, Month #', this.state.weekdayMonthDate);
     result = result.replace('00 a.m.', this.state.startTime);
@@ -310,6 +314,18 @@ class App extends Component {
               <div className={styles.space}>
                 <BodyCopy2Col1
                   value={this.state.col1BodyCopy}
+                  change={this.valueChangeHandler}
+                />
+              </div>
+              <div className={styles.space}>
+                <Headline2Col2
+                  value={this.state.col2Headline}
+                  change={this.valueChangeHandler}
+                />
+              </div>
+              <div className={styles.space}>
+                <BodyCopy2Col2
+                  value={this.state.col2BodyCopy}
                   change={this.valueChangeHandler}
                 />
               </div>
