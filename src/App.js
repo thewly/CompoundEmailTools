@@ -147,7 +147,7 @@ class App extends Component {
     result = result.replace("Official Ring", this.state.col2Headline);
     result = result.replace("Display your achievement with officially-licensed gifts, tailgating gear, jewelry, accessories and more.", this.state.col1BodyCopy);
     result = result.replace("Order your personalized ring to show your pride and celebrate your success with fellow classmates.", this.state.col2BodyCopy);
-    result = result.replace('ONE DAY ONLY', this.state.subhead);
+    result = result.replace('XXX DAY ONLY', this.state.subhead);
     result = result.replace('Day, Month #', this.state.weekdayMonthDate);
     result = result.replace('00 a.m.', this.state.startTime);
     result = result.replace('00 p.m.', this.state.endTime);
