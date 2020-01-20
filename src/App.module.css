@@ -36,8 +36,8 @@
 .buttons {
   text-align: center;
 }
-.EmailButton {
-  margin: 0 1rem 0 1rem;
+.buttonSpace {
+  margin: 0 2px 0 0;
 }
 .space {
   margin: 0 0 1rem 0;

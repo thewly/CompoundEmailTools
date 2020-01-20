@@ -442,11 +442,11 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col text-center MainNav">
-            <h3 className={styles.rudeNav}>Beta React Comb Email Tool</h3>
-            <button className="btn btn-primary" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>
-
+            <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
+            
+              <button className="btn btn-primary m-2" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>
+            
             <button className="btn btn-primary" name="showEESS2ColEmail" onClick={this.toggleEmailHandler}>EE-SS-2Col</button>
-
           </div>
         </div>
         {EmailEditor}
