@@ -516,6 +516,7 @@ class App extends Component {
             <p><b>Shop your curated collection</b></p>
             <div className="row">
               <Image2Col1Preview
+                font="white"
                 schoolName={this.state.schoolName}
                 click={this.SchoolAlumniShopPreview}
                 headline={this.state.col1Headline}
@@ -523,6 +524,7 @@ class App extends Component {
                 buttonColor={this.state.buttonColor}
               />
               <Image2Col2Preview
+                font="white"
                 schoolName={this.state.schoolName}
                 click={this.SchoolOfficialRingPreview}
                 headline={this.state.col2Headline}
