@@ -26,10 +26,15 @@ import ButtonColor from './components/buttonColor/buttonColor';
 import DayCount from './components/dayCount/dayCount';
 import DayCountPreview from './components/dayCountPreview/dayCountPreview';
 import WeekdayMonthDate from './components/weekdayMonthDate/weekdayMonthDate';
+import WeekdayMonthDate2 from './components/weekdayMonthDate2/weekdayMonthDate2';
 import WeekdayMonthDatePreview from './components/weekdayMonthDatePreview/weekdayMonthDatePreview';
+import WeekdayMonthDatePreview2 from './components/weekdayMonthDatePreview2/weekdayMonthDatePreview2';
 import StartTime from './components/startTime/startTime';
 import EndTime from './components/endTime/endTime';
+import StartTime2 from './components/startTime2/startTime2';
+import EndTime2 from './components/endTime2/endTime2';
 import TimePreview from './components/timePreview/timePreview';
+import TimePreview2 from './components/timePreview2/timePreview2';
 import Location from './components/location/location';
 import LocationPreview from './components/locationPreview/locationPreview';
 import ImagePanelPreview from './components/imagePanelPreview/imagePanelPreivew';
@@ -47,12 +52,15 @@ class App extends Component {
     inHandDate: "111111",
     SMI: "222222",
     bodyCopy: "Be part of a timeless [Nickname] tradition. Order your personalized ring to show your pride and celebrate your success with fellow classmates.",
-    buttonColor: "#d2d2d2",
+    buttonColor: "#000000",
     footerColor: "000000",
     subhead: "ONE DAY ONLY",
     weekdayMonthDate: "Monday, Oct. 28",
     startTime: "10 a.m.",
     endTime: "2 p.m.",
+    weekdayMonthDate2: "Monday, Oct. 28",
+    startTime2: "10 a.m.",
+    endTime2: "2 p.m.",
     location: "Student Center",
     footerURL: "http://www.balfour.com/schoolname",
     monthAndJobNumber: "0020.job#",
@@ -63,7 +71,9 @@ class App extends Component {
     col2BodyCopy: "Order your personalized ring to show your pride and celebrate your success with fellow classmates.",
 
     showEESSROEmail: false,
-    showEESS2ColEmail: false
+    showEESS2ColEmail: false,
+
+    oneDTP: true
   }
 
   valueChangeHandler = (event) => {
@@ -72,7 +82,12 @@ class App extends Component {
       [key]: event.target.value
     })
   }
-
+  changeToTwoDTP = () => {
+    const dateToggle = this.state.oneDTP
+    this.setState({
+      oneDTP: !dateToggle
+    })
+  }
   SMITestButton = () => {
     window.open('https://www.balfour.com/shop/jewelry/rings/college-class-rings?smi=' + this.state.SMI, '_blank')
   }
@@ -103,7 +118,7 @@ class App extends Component {
     var result = EE_SS_RO;
 
     // these items happen more than once & require regex
-    var Cregex = /000000/gi;
+    var Cregex = /#000000/gi;
     var SNregex = /schoolname/gi;
     var SLregex = /schoollink/gi;
     var UTMregex = /111111/gi;
@@ -121,6 +136,10 @@ class App extends Component {
     result = result.replace('Day, Month #', this.state.weekdayMonthDate);
     result = result.replace('00 a.m.', this.state.startTime);
     result = result.replace('00 p.m.', this.state.endTime);
+    if (!this.state.oneDTP){
+      result = result.replace('Location<br>', this.state.weekdayMonthDate2 + '<br>Location<br>');
+      result = result.replace('Location<br>', this.state.startTime2 + ' &ndash; ' + this.state.endTime2 + '<br>Location<br>');
+    }
     result = result.replace('Location', this.state.location);
 
     download(result, 'XXXX_EE-SS-RO.html', "text/html");
@@ -129,7 +148,7 @@ class App extends Component {
     var result = EE_SS_2Col;
 
     // these items happen more than once & require regex
-    var Cregex = /000000/gi;
+    var Cregex = /#000000/gi;
     var SNregex = /schoolname/gi;
     var SLregex = /schoollink/gi;
     var UTMregex = /111111/gi;
@@ -151,6 +170,10 @@ class App extends Component {
     result = result.replace('Day, Month #', this.state.weekdayMonthDate);
     result = result.replace('00 a.m.', this.state.startTime);
     result = result.replace('00 p.m.', this.state.endTime);
+    if (!this.state.oneDTP){
+      result = result.replace('Location<br />', this.state.weekdayMonthDate2 + '<br />Location<br />');
+      result = result.replace('Location<br />', this.state.startTime2 + ' &ndash; ' + this.state.endTime2 + '<br />Location<br />');
+    }
     result = result.replace('Location', this.state.location);
 
     download(result, 'XXXX_EE-SS-2Col.html', "text/html");
@@ -219,6 +242,31 @@ class App extends Component {
                 />
               </div>
               <div className={styles.space}>
+              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              </div>
+              {this.state.oneDTP ? null : (
+                <div>
+                  <div className={styles.space}>
+                    <WeekdayMonthDate2
+                      value={this.state.weekdayMonthDate2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                  <div className={styles.space}>
+                    <StartTime2
+                      value={this.state.startTime2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                  <div className={styles.space}>
+                    <EndTime2
+                      value={this.state.endTime2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                </div>
+              )}
+              <div className={styles.space}>
                 <Location
                   value={this.state.location}
                   change={this.valueChangeHandler}
@@ -236,7 +284,7 @@ class App extends Component {
                   change={this.valueChangeHandler}
                 />
               </div>
-              <button className="btn btn-primary" onClick={this.MakeEE_SS_RO}>Make Email</button>
+              <button className="btn btn-secondary" onClick={this.MakeEE_SS_RO}>Make Email</button>
             </div>
           </div>
           <div className="col-md-6 text-center">
@@ -252,6 +300,7 @@ class App extends Component {
               bodyCopy={this.state.bodyCopy}
             />
             <SchoolLinkPreview
+              font="white"
               click={this.SMITestButton}
               buttonColor={this.state.buttonColor}
             />
@@ -266,6 +315,17 @@ class App extends Component {
               startTime={this.state.startTime}
               endTime={this.state.endTime}
             />
+            {this.state.oneDTP ? null : (
+              <div>
+                <WeekdayMonthDatePreview2
+                weekdayMonthDate={this.state.weekdayMonthDate2}
+                />
+                <TimePreview2
+                startTime={this.state.startTime2}
+                endTime={this.state.endTime2}
+                />
+              </div>
+            )}
             <LocationPreview
               location={this.state.location}
             />
@@ -366,6 +426,31 @@ class App extends Component {
                 />
               </div>
               <div className={styles.space}>
+              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              </div>
+              {this.state.oneDTP ? null : (
+                <div>
+                  <div className={styles.space}>
+                    <WeekdayMonthDate2
+                      value={this.state.weekdayMonthDate2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                  <div className={styles.space}>
+                    <StartTime2
+                      value={this.state.startTime2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                  <div className={styles.space}>
+                    <EndTime2
+                      value={this.state.endTime2}
+                      change={this.valueChangeHandler}
+                    />
+                  </div>
+                </div>
+              )}
+              <div className={styles.space}>
                 <Location
                   value={this.state.location}
                   change={this.valueChangeHandler}
@@ -383,7 +468,7 @@ class App extends Component {
                   change={this.valueChangeHandler}
                 />
               </div>
-              <button className="btn btn-primary" onClick={this.MakeEE_SS_2Col}>Make Email</button>
+              <button className="btn btn-secondary" onClick={this.MakeEE_SS_2Col}>Make Email</button>
             </div>
           </div>
           <div className="col-md-6 text-center">
@@ -399,6 +484,7 @@ class App extends Component {
               bodyCopy={this.state.bodyCopy}
             />
             <SchoolLinkPreview
+              font="white"
               click={this.SMITestButton}
               buttonColor={this.state.buttonColor}
             />
@@ -413,6 +499,17 @@ class App extends Component {
               startTime={this.state.startTime}
               endTime={this.state.endTime}
             />
+            {this.state.oneDTP ? null : (
+              <div>
+                <WeekdayMonthDatePreview2
+                weekdayMonthDate={this.state.weekdayMonthDate2}
+                />
+                <TimePreview2
+                startTime={this.state.startTime2}
+                endTime={this.state.endTime2}
+                />
+              </div>
+            )}
             <LocationPreview
               location={this.state.location}
             /><br />
@@ -443,10 +540,10 @@ class App extends Component {
         <div className="row">
           <div className="col text-center MainNav">
             <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
-            
-              <button className="btn btn-primary m-2" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>
-            
-            <button className="btn btn-primary" name="showEESS2ColEmail" onClick={this.toggleEmailHandler}>EE-SS-2Col</button>
+
+            <button className="btn btn-secondary m-2" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>
+
+            <button className="btn btn-secondary" name="showEESS2ColEmail" onClick={this.toggleEmailHandler}>EE-SS-2Col</button>
           </div>
         </div>
         {EmailEditor}
