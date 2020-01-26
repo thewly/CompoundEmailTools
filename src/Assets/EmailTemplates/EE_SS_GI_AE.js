@@ -257,11 +257,9 @@ td.import-element-block1 {width: 100% !important;
 				        <td><table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
 				          <tbody>
 				            <tr>
-				              <td> <h2 style="line-height: 1.3; text-align: center">Order your Official [School Name] Ring and<br />
- take your graduation photos!</h2>
+				              <td> <h2 style="line-height: 1.3; text-align: center">Order your Official [School Name] Ring and<br /> take your graduation photos!</h2>
 				          <center>
-				            Be part of a timeless [Nickname] tradition. Visit Balfour and <br />
-GradImages on-campus during the event.
+				            Be part of a timeless [Nickname] tradition. Visit Balfour and <br />GradImages on-campus during the event.
 			              </center>
 				          <br />
 			
