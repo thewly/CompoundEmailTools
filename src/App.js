@@ -140,7 +140,7 @@ class App extends Component {
     // this swaps out what's in the email for what's in the finished form
     result = result.replace(Cregex, this.state.buttonColor);
     result = result.replace(SNregex, this.state.schoolName);
-    result = result.replace(SLregex, this.state.schoollink);
+    result = result.replace(SLregex, this.state.schoolLink);
     result = result.replace(UTMregex, this.state.inHandDate);
     result = result.replace(SMIregex, this.state.SMI);
     result = result.replace("It's time to order your Official [School] Ring!", this.state.headline);
@@ -170,7 +170,7 @@ class App extends Component {
     // this swaps out what's in the email for what's in the finished form
     result = result.replace(Cregex, this.state.buttonColor);
     result = result.replace(SNregex, this.state.schoolName);
-    result = result.replace(SLregex, this.state.schoollink);
+    result = result.replace(SLregex, this.state.schoolLink);
     result = result.replace(UTMregex, this.state.inHandDate);
     result = result.replace(SMIregex, this.state.SMI);
     result = result.replace("It's time to order your Official [School] Ring!", this.state.headline);
@@ -204,7 +204,7 @@ class App extends Component {
     // this swaps out what's in the email for what's in the finished form
     result = result.replace(Cregex, this.state.buttonColor);
     result = result.replace(SNregex, this.state.schoolName);
-    result = result.replace(SLregex, this.state.schoollink);
+    result = result.replace(SLregex, this.state.schoolLink);
     result = result.replace(UTMregex, this.state.inHandDate);
     result = result.replace(SMIregex, this.state.SMI);
     result = result.replace("Order your Official [School Name] Ring and<br /> take your graduation photos!", this.state.headline);
