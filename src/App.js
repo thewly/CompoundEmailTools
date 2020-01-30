@@ -26,7 +26,7 @@ import download from 'downloadjs';
 class App extends Component {
   state = {
     schoolLink: "schoollink",
-    headline: "Order your Official School Name Ring now to ensure ceremony delivery!",
+    headline: "It's time to order your Official [School name] Ring!",
     headlineEESSGIAE: "Order your Official [School Name] Ring and take your graduation photos!",
     inHandDate: "111111",
     SMI: "222222",
