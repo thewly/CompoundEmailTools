@@ -926,7 +926,7 @@ class App extends Component {
                 name="inHandDate"
                 rows="1"
               />
-              <button className="btn btn-secondary" onClick={this.MakeEE_SS_RO}>Make Email</button>
+              <button className="btn btn-secondary" onClick={this.MakeEE_SS_KS_RO}>Make Email</button>
             </div>
           </div>
           <div className="col-md-6 text-center">
