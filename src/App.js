@@ -956,7 +956,7 @@ class App extends Component {
               <li>A lifetime warranty with free resizing, polishing and cleaning</li>
               <li>A Ring Loss Protection Plan</li>
             </ul>
-            <EESSRO_ImagePanelPreview
+            <EESSKSRO_ImagePanelPreview
               schoolName={this.state.schoolName}
               click={this.SchoolLinkPreview}
             />
