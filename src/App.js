@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './App.module.css';
 import {Animated} from "react-animated-css";
+import ReactTimeout from 'react-timeout';
 
 // these are all of the blank templates that get brought in
 import EE_SS_2Col from './Assets/EmailTemplates/EE_SS_2Col';
@@ -15,8 +16,10 @@ import EE_SS_KS_RO from './Assets/EmailTemplates/EE_SS_KS_RO';
 import InputGeneric from './components/InputGeneric/InputGeneric';
 import EESSRO_Body_Preview from './components/EESSRO_Body_Preview/EESSRO_Body_Preview';
 import EESSGIAE_Body_Preview from './components/EESSGIAE_Body_Preview/EESSGIAE_Body_Preview';
-import ImageHeroPreview from './components/imageHeroPreview/imageHeroPreview';
-import ImagePanelPreview from './components/imagePanelPreview/imagePanelPreivew';
+import EESSRO_ImageHeroPreview from './components/EESSRO_ImageHeroPreview/EESSRO_ImageHeroPreview';
+import EESSKSRO_ImageHeroPreview from './components/EESSKSRO_ImageHeroPreview/EESSKSRO_ImageHeroPreview';
+import EESSRO_ImagePanelPreview from './components/EESSRO_ImagePanelPreview/EESSRO_ImagePanelPreview';
+import EESSKSRO_ImagePanelPreview from './components/EESSKSRO_ImagePanelPreview/EESSKSRO_ImagePanelPreview';
 import Image2ColHeroPreview from './components/image2ColHeroPreview/image2ColHeroPreview';
 import Image2Col1Preview from './components/image2Col1Preview/image2Col1Preview';
 import Image2Col2Preview from './components/image2Col2Preview/image2Col2Preview';
@@ -66,17 +69,22 @@ class App extends Component {
 
     oneDTP: true
   }
-  showPageHeader = () => {
-    if (this.state.showEESS2ColEmail || this.state.showEESSGIAEEmail || this.state.showEESSROEmail || this.state.showEESSKSROEmail) {
-      this.setState ({
-        showPageHeader:false
-      })
-    } else {
-      this.setState({
-        showPageHeader:true
-      })
-    }
-  }
+  // showPageHeader = () => {
+  //   if (this.state.showEESS2ColEmail || this.state.showEESSGIAEEmail || this.state.showEESSROEmail || this.state.showEESSKSROEmail) {
+  //     this.setState ({
+  //       showPageHeader:false
+  //     })
+  //   } else {
+  //     this.setState({
+  //       showPageHeader:true
+  //     })
+  //   }
+  //   if (this.state.showPageHeader) {
+  //     console.log("it should show now")
+  //   } else {
+  //     console.log("it should NOT show now")
+  //   }
+  // }
   valueChangeHandler = (event) => {
     const key = event.target.name
     this.setState({
@@ -121,7 +129,7 @@ class App extends Component {
     this.setState({
       showEESSROEmail: false,
       showEESS2ColEmail: false,
-      showEESSGIAEEmail: false
+      showEESSGIAEEmail: false,
     })
     const doesShow = this.state[key];
     console.log("the event.target.name is: " + event.target.name)
@@ -388,7 +396,7 @@ class App extends Component {
             </div>
           </div>
           <div className="col-md-6 text-center">
-            <ImageHeroPreview
+            <EESSRO_ImageHeroPreview
               schoolName={this.state.schoolName}
               click={this.SchoolLinkPreview}
             />
@@ -414,7 +422,7 @@ class App extends Component {
               <li>A lifetime warranty with free resizing, polishing and cleaning</li>
               <li>A Ring Loss Protection Plan</li>
             </ul>
-            <ImagePanelPreview
+            <EESSKSRO_ImagePanelPreview
               schoolName={this.state.schoolName}
               click={this.SchoolLinkPreview}
             />
@@ -922,7 +930,7 @@ class App extends Component {
             </div>
           </div>
           <div className="col-md-6 text-center">
-            <ImageHeroPreview
+            <EESSKSRO_ImageHeroPreview
               schoolName={this.state.schoolName}
               click={this.SchoolLinkPreview}
             />
@@ -948,7 +956,7 @@ class App extends Component {
               <li>A lifetime warranty with free resizing, polishing and cleaning</li>
               <li>A Ring Loss Protection Plan</li>
             </ul>
-            <ImagePanelPreview
+            <EESSRO_ImagePanelPreview
               schoolName={this.state.schoolName}
               click={this.SchoolLinkPreview}
             />
@@ -963,10 +971,16 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col text-center MainNav">
-            {this.state.showEESS2ColEmail || this.state.showEESSGIAEEmail || this.state.showEESSROEmail || this.state.showEESSKSROEmail ? (null) : (
+            {this.state.showEESSROEmail || this.state.showEESS2ColEmail || this.state.showEESSGIAEEmail || this.state.showEESSKSROEmail ? 
+           (
+              <Animated animationOut="fadeOut" isVisible={false}>
+                <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
+              </Animated>
+            ) : (
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
               <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
             </Animated>
+            
             )}
               
             <button className="btn btn-secondary m-2" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>

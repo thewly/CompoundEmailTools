@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './imagePanelPreview.module.css'
+import styles from './EESSRO_ImagePanelPreview.module.css'
 
-const imagePanel = (props) => {
+const EESSRO_ImagePanelPreview = (props) => {
     return (
         <div>
             <img onClick={props.click} className={styles.Spacing} src={"http://via.placeholder.com/560x150?text=panel-" + props.schoolName + ".jpg"} alt="EESSGIAE Panel" />
@@ -9,4 +9,4 @@ const imagePanel = (props) => {
     )
 }
 
-export default imagePanel;
+export default EESSRO_ImagePanelPreview;

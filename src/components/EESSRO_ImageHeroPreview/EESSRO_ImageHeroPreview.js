@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './imageHeroPreview.module.css'
+import styles from './EESSRO_ImageHeroPreview.module.css'
 
-const imageHero = (props) => {
+const EESSRO_ImageHeroPreview = (props) => {
     return (
         <div>
             <img onClick={props.click} className={styles.Spacing} src={"http://via.placeholder.com/560x300?text=hero-" + props.schoolName + ".jpg"} alt="Main Header" />
@@ -9,4 +9,4 @@ const imageHero = (props) => {
     )
 }
 
-export default imageHero;
+export default EESSRO_ImageHeroPreview;
