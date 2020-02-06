@@ -130,6 +130,7 @@ class App extends Component {
       showEESSROEmail: false,
       showEESS2ColEmail: false,
       showEESSGIAEEmail: false,
+      showEESSKSROEmail: false,
     })
     const doesShow = this.state[key];
     console.log("the event.target.name is: " + event.target.name)
@@ -138,6 +139,7 @@ class App extends Component {
     this.setState({
       [event.target.name]: !doesShow
     });
+    console.log()
   }
 
   // these are the functions that actually put the form into the HTML emails
@@ -972,11 +974,7 @@ class App extends Component {
         <div className="row">
           <div className="col text-center MainNav">
             {this.state.showEESSROEmail || this.state.showEESS2ColEmail || this.state.showEESSGIAEEmail || this.state.showEESSKSROEmail ? 
-           (
-              <Animated animationOut="fadeOut" isVisible={false}>
-                <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
-              </Animated>
-            ) : (
+           (null) : (
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
               <h3 className={styles.rudeNav}>Balfour Email Maker 2.0</h3>
             </Animated>
@@ -985,7 +983,7 @@ class App extends Component {
               
             <button className="btn btn-secondary m-2" name="showEESSROEmail" onClick={this.toggleEmailHandler}>EE-SS-RO</button>
             <button className="btn btn-secondary m-2" name="showEESSKSROEmail" onClick={this.toggleEmailHandler}>EE-SS-KS-RO</button>
-            <button className="btn btn-secondary" name="showEESS2ColEmail" onClick={this.toggleEmailHandler}>EE-SS-2Col</button>
+            <button className="btn btn-secondary m-2" name="showEESS2ColEmail" onClick={this.toggleEmailHandler}>EE-SS-2Col</button>
             <button className="btn btn-secondary m-2" name="showEESSGIAEEmail" onClick={this.toggleEmailHandler}>EE-SS-GI-AE</button>
           </div>
         </div>
