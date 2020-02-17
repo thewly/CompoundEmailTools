@@ -17,7 +17,7 @@ const EESSGIAE_Body_Preview = (props) => {
                 </div>
             )}
             <p className={styles.locationPreview}>{props.location}</p>
-            <br/><img onClick={props.click} className={styles.Spacing} src={"http://via.placeholder.com/560x150?text=2-logo_" + props.schoolName + ".jpg"} alt="EESSRO Panel" />
+            <br/><img onClick={props.click} className={styles.Spacing} src={"http://via.placeholder.com/560x100?text=2-logo_" + props.schoolName + ".jpg"} alt="EESSRO Panel" />
         </div>
     )
 }

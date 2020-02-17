@@ -149,7 +149,6 @@ a[x-apple-data-detectors] {
 	</table>
 </body>
 </html>
-
 `;
 
 export default EE_SS_RO;

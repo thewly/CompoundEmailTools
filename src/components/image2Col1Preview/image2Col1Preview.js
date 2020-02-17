@@ -9,7 +9,7 @@ const image2Col1 = (props) => {
             <p className={styles.headlineStyle}>{props.headline}</p>
             <p className={styles.bodyCopy}>{props.bodyCopy}</p>
             <button onClick={props.click} type="button" style={{color: props.font, backgroundColor: props.buttonColor}} className="btn-lg">
-                Shop Alumni
+                SHOP PHOTO GIFTS
             </button><br/><br/>
             </div>
         </div>

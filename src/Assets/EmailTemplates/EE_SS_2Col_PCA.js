@@ -1,4 +1,4 @@
-const EE_SS_2Col = `
+const EE_SS_2Col_PCA = `
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -308,18 +308,18 @@ td.import-element-block1 {width: 100% !important;
 															<td align="left" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align:left;text-align:left;font-size:16px;padding:0;line-height:normal;margin-left:0;font-family:Helvetica,Arial,sans-serif;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-1" style="width:300px;border-collapse:collapse;padding-right:0;margin:0 auto;">
 				<tbody>
 					<tr>
-									<td align="center" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align: center; text-align: left; font-size:16px;padding:5;line-height:normal;margin-left:0;"><a border="0" href="https://www.balfour.com/photo-gifts?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_image-col1" style="display:inline;" target="_blank" title="photo_gifts" xt="SPCLICKSTREAM"><img alt="Photo Gifts" class="el-inner image" src="images/2-col1_schoolname.jpg" style="display:block;margin-right:auto;margin-left:auto;border:none; min-width: 80%; max-width: 265px; height: auto;" width="600" title="photo_gifts"/></a>
+									<td align="center" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align: center; text-align: left; font-size:16px;padding:5;line-height:normal;margin-left:0;"><a border="0" href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_image-col1" style="display:inline;" target="_blank" title="announcements" xt="SPCLICKSTREAM"><img alt="Graduation Announcements" class="el-inner image" src="images/2-col1_schoolname.jpg" style="display:block;margin-right:auto;margin-left:auto;border:none; min-width: 80%; max-width: 265px; height: auto;" width="600" title="announcements"/></a>
 									
 <center>
   <p style="font-family: Arial; padding-left: 20px; padding-right: 20px; line-height: 1.3;">
-	  <strong style="font-size: 125%;">PHOTO GIFTS</strong><br><br>
-	  Display your favorite moments everywhere! Create custom books, wall art, office décor, jewelry and more featuring your photos. </p>
+	  <strong style="font-size: 125%;">ANNOUNCEMENTS</strong><br><br>
+	  Celebrate your graduation with friends and family! Save on packages including thank you notes, address labels and envelopes. </p>
 </center>
 				<center>
 				<table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto; background:#ffffff;" bgcolor="#ffffff">
                         <tr>
-                          <td align="center" class="button-td" style="border-radius: 3px; background: #000000; text-align: center;"><a href="https://www.balfour.com/photo-gifts?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_button-col1" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"> 
-                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->SHOP PHOTO GIFTS<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                          <td align="center" class="button-td" style="border-radius: 3px; background: #000000; text-align: center;"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_button-col1" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->SHOP PACKAGES<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
                             </a></td>
                         </tr>
                       </table>
@@ -384,7 +384,7 @@ td.import-element-block1 {width: 100% !important;
 				          </tr>
 				        </table></td>
 			        </tr>
-		        
+		        </table>
 <!-- End Split Feature Stacking -->
 				
 				</td>
@@ -414,4 +414,4 @@ td.import-element-block1 {width: 100% !important;
 </html>
 `;
 
-export default EE_SS_2Col;
+export default EE_SS_2Col_PCA;

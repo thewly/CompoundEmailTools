@@ -258,11 +258,9 @@ td.import-element-block1 {width: 100% !important;
 				        <td><table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
 				          <tbody>
 				            <tr>
-				              <td> <h2 style="line-height: 1.3; text-align: center">Order your Official [School Name] Ring and<br />
- take your graduation photos!</h2>
+				              <td> <h2 style="line-height: 1.3; text-align: center">Order your Official [School Name] Ring and<br /> take your graduation photos!</h2>
 				          <center>
-				            Be part of a timeless [Nickname] tradition. Visit Balfour and <br />
-GradImages on-campus during the event.
+				            Be part of a timeless [Nickname] tradition. Visit Balfour and <br />GradImages on-campus during the event.
 			              </center>
 				          <br />
 			
@@ -406,7 +404,7 @@ GradImages on-campus during the event.
 			<center>
 				                        <table cellspacing="0" cellpadding="0" border="0" style="margin: auto; background:#ffffff;" bgcolor="#ffffff">
 				                          <tr>
-				                            <td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222&utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: Arial, sans-serif;  font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a">
+				                            <td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: Arial, sans-serif;  font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a">
 				                              <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
 				                              ORDER NOW
 				                              <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->

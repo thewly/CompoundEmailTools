@@ -8,7 +8,7 @@ const EESSRO_Body_Preview = (props) => {
             <p className={styles.bodyCopy}>{props.bodyCopy}</p>
             <div className={styles.spacing}>
                 <button onClick={props.click} type="button" style={{color: props.font, backgroundColor: props.buttonColor}} className="btn-lg">
-                    School Link Test
+                    ORDER YOUR RING
                 </button>
             </div>
             <h5>Or visit your on-campus representative:</h5>

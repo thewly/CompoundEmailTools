@@ -1,0 +1,32 @@
+.Spacing {
+    margin: 0 0 2rem 0
+}
+.container1 {
+    height: 300px;
+    text-align: center;
+    padding: 130px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+.container2 {
+    height: 300px;
+    text-align: center;
+    padding: 50px 0;
+    color: black;
+}
+.headlineStyle {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+  }
+  .bodyCopy {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
