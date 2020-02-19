@@ -368,59 +368,11 @@ td.import-element-block1 {width: 100% !important;
 				  </table>&nbsp;
 				  <table cellpadding="0" cellspacing="0" class="row import-container import-container-9 import-container-76039451723" style="border-spacing: 0px; border-collapse: collapse; word-break: break-word; padding:0px; position:relative; background-color: #3ea6de;">
 				    <tbody>
-				      <tr>
+					  <tr>
+					  
+
 				        <!-- Column 1 Begin -->
-				        <td align="center" class="wrapper valign" style="vertical-align:top; padding:0;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-1" style="border-collapse: collapse; padding-right:0; margin:0 auto;">
-				          <tbody>
-				            <tr>
-				              <td class="column-content valign no-padding" style="width:265px;vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%">
-				                <tbody>
-				                  <tr>
-				                    <td align="left" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align: center; text-align: left; font-size:16px;padding:0;line-height:normal;margin-left:0;"><a border="0" href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-announcements" style="display:inline;" target="_blank" title="grad_announcements" xt="SPCLICKSTREAM"><br />
-				                      <img alt="Graduation Announcements" class="el-inner image" src="images/5-announcements_schoolname.jpg" style="display:block;border:none; min-width: 80%; max-width: 600px; height: auto;" width="300px" title="grad_announcements"/></a>
-				                      <center>
-				                      </center></td>
-				                    </tr>
-				                  </tbody>
-				                </table></td>
-				              </tr>
-				            </tbody>
-				          </table>
-				          <br /></td>
-				        <!-- Column 1 End -->
-				        <!-- Column 2 Begin -->
-				        <td align="center" class="wrapper valign " style="vertical-align:top; padding:0; position: relative;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-2" style="border-collapse:collapse;padding-right:0;margin:0 auto;">
-				          <tbody>
-				            <tr>
-				              <td class="column-content valign no-padding" style="vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;width:265px;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%">
-				                <tbody>
-				                  <tr>
-				                    <td align="left" class="import-element import-element-block import-element-1 import-element-21272106884 el-outer" style="align:left;text-align:left;font-size:16px;padding:0;line-height:normal;margin-left:0;font-family:Helvetica,Arial,sans-serif;"><center>
-  				<br />
-<p style="font-family: Arial, sans-serif; padding-left: 20px; padding-right: 20px; line-height: 1.3; color: #ffffff">
-	  <strong style="font-size: 125%;">GRADUATION ANNOUNCEMENTS</strong><br><br>
-	  		Order your announcements in time for graduation!</p>
-			</center>
-			<center>
-				                        <table cellspacing="0" cellpadding="0" border="0" style="margin: auto; background:#ffffff;" bgcolor="#ffffff">
-				                          <tr>
-				                            <td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: Arial, sans-serif;  font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a">
-				                              <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
-				                              ORDER NOW
-				                              <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
-				                              </a></td>
-				                            </tr>
-				                          </table>
-				                        <br />
-				                        </center></td>
-				                    </tr>
-				                  </tbody>
-				                </table></td>
-				              </tr>
-				            </tbody>
-				          </table>
-				          <br /></td>
-				        <br />
+				        <td align="center" class="wrapper valign" style="vertical-align:top; padding:0;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-1" style="border-collapse: collapse; padding-right:0; margin:0 auto;"><tbody><tr><td class="column-content valign no-padding" style="width:265px;vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%"><tbody><tr><td align="left" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align: center; text-align: left; font-size:16px;padding:0;line-height:normal;margin-left:0;"><a border="0" href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-announcements" style="display:inline;" target="_blank" title="grad_announcements" xt="SPCLICKSTREAM"><br /><img alt="Graduation Announcements" class="el-inner image" src="images/5-announcements_schoolname.jpg" style="display:block;border:none; min-width: 80%; max-width: 600px; height: auto;" width="300px" title="grad_announcements"/></a><center></center></td></tr></tbody></table></td></tr></tbody></table><br /></td><td align="center" class="wrapper valign " style="vertical-align:top; padding:0; position: relative;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-2" style="border-collapse:collapse;padding-right:0;margin:0 auto;"><tbody><tr><td class="column-content valign no-padding" style="vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;width:265px;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%"><tbody><tr><td align="left" class="import-element import-element-block import-element-1 import-element-21272106884 el-outer" style="align:left;text-align:left;font-size:16px;padding:0;line-height:normal;margin-left:0;font-family:Helvetica,Arial,sans-serif;"><center><br /><p style="font-family: Arial, sans-serif; padding-left: 20px; padding-right: 20px; line-height: 1.3; color: #ffffff"><strong style="font-size: 125%;">GRADUATION ANNOUNCEMENTS</strong><br><br>Order your announcements in time for graduation!</p></center><center><table cellspacing="0" cellpadding="0" border="0" style="margin: auto; background:#ffffff;" bgcolor="#ffffff"><tr><td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: Arial, sans-serif;  font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->ORDER NOW<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--></a></td></tr></table><br /></center></td></tr></tbody></table></td></tr></tbody></table><br /></td><br />
 				        <!-- Column 2 End -->
 			          </tr>
 			        </tbody>

@@ -8,7 +8,6 @@ import EE_SS_2Col from './Assets/EmailTemplates/EE_SS_2Col';
 import EE_SS_2Col_PCA from './Assets/EmailTemplates/EE_SS_2Col_PCA';
 // import EE_SS_GF from './Assets/EmailTemplates/EE_SS_GF';
 import EE_SS_GI_AE_Annc from './Assets/EmailTemplates/EE_SS_GI_AE_Annc';
-import EE_SS_GI_AE from './Assets/EmailTemplates/EE_SS_GI_AE';
 // import EE_SS_GI_NAE_Annc from './Assets/EmailTemplates/EE_SS_GI_NAE_Annc';
 // import EE_SS_GI_NAE from './Assets/EmailTemplates/EE_SS_GI_NAE';
 import EE_SS_RO from './Assets/EmailTemplates/EE_SS_RO';
@@ -73,7 +72,8 @@ class App extends Component {
     showEESSGIAEAnncEmail: false,
 
     // these are edge case attributes
-    oneDTP: true
+    oneDTP: true,
+    killAnnouncements: false
   }
   valueChangeHandler = (event) => {
     const key = event.target.name
@@ -81,11 +81,14 @@ class App extends Component {
       [key]: event.target.value
     })
   }
-  changeToTwoDTP = () => {
-    const dateToggle = this.state.oneDTP
+  valueToggler = (event) => {
+    console.log(event.target.name + ":" + event.target.value);
+    const key = event.target.name
+    const val = this.state[key]
     this.setState({
-      oneDTP: !dateToggle
-    })
+      [key]: !val
+    });
+    console.log(event.target.name + ":" + event.target.value);
   }
   SMITestButton = () => {
     window.open('https://www.balfour.com/shop/jewelry/rings/college-class-rings?smi=' + this.state.SMI, '_blank')
@@ -125,9 +128,6 @@ class App extends Component {
       showEESSGIAEAnncEmail: false,
     })
     const doesShow = this.state[key];
-    console.log("the event.target.name is: " + event.target.name)
-    console.log("the key is: " + key)
-    console.log("the 'doesShow is: " + doesShow);
     this.setState({
       [event.target.name]: !doesShow
     });
@@ -257,7 +257,7 @@ class App extends Component {
   }
   MakeEE_SS_GI_AE_Annc = () => {
     var result = EE_SS_GI_AE_Annc;
-
+    console.log("the state of kill announcements is " + this.state.killAnnouncements)
     // these items happen more than once & require regex
     var Cregex = /#3ea6de/gi;
     var SNregex = /schoolname/gi;
@@ -266,6 +266,9 @@ class App extends Component {
     var SMIregex = /222222/gi;
 
     // this swaps out what's in the email for what's in the finished form
+    if (this.state.killAnnouncements){
+      result = result.replace('<td align="center" class="wrapper valign" style="vertical-align:top; padding:0;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-1" style="border-collapse: collapse; padding-right:0; margin:0 auto;"><tbody><tr><td class="column-content valign no-padding" style="width:265px;vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%"><tbody><tr><td align="left" class="import-element import-element-block import-element-1 import-element-88403364326 el-outer" style="align: center; text-align: left; font-size:16px;padding:0;line-height:normal;margin-left:0;"><a border="0" href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=img-announcements" style="display:inline;" target="_blank" title="grad_announcements" xt="SPCLICKSTREAM"><br /><img alt="Graduation Announcements" class="el-inner image" src="images/5-announcements_schoolname.jpg" style="display:block;border:none; min-width: 80%; max-width: 600px; height: auto;" width="300px" title="grad_announcements"/></a><center></center></td></tr></tbody></table></td></tr></tbody></table><br /></td><td align="center" class="wrapper valign " style="vertical-align:top; padding:0; position: relative;"><table cellpadding="0" cellspacing="0" class="columns import-column import-column-2" style="border-collapse:collapse;padding-right:0;margin:0 auto;"><tbody><tr><td class="column-content valign no-padding" style="vertical-align:top;padding-right:0;padding-top:0;padding-bottom:0;padding-left:inherit;width:265px;"><table style="table-layout:fixed;border-collapse:collapse;" width="100%"><tbody><tr><td align="left" class="import-element import-element-block import-element-1 import-element-21272106884 el-outer" style="align:left;text-align:left;font-size:16px;padding:0;line-height:normal;margin-left:0;font-family:Helvetica,Arial,sans-serif;"><center><br /><p style="font-family: Arial, sans-serif; padding-left: 20px; padding-right: 20px; line-height: 1.3; color: #ffffff"><strong style="font-size: 125%;">GRADUATION ANNOUNCEMENTS</strong><br><br>Order your announcements in time for graduation!</p></center><center><table cellspacing="0" cellpadding="0" border="0" style="margin: auto; background:#ffffff;" bgcolor="#ffffff"><tr><td style="border-radius: 3px; background: #000000; text-align: center;" class="button-td"><a href="http://orders.balfour.com/smi222222/catalog/category/view/s/personalized-college-announcements/id/312673/?smi=222222?utm_medium=email&utm_source=collegiate&utm_campaign=col_schoolname_111111&utm_content=cta_anncbutton" style="border: 15px solid #000000; padding: 0 10px; color: #ffffff; font-family: Arial, sans-serif;  font-size: 15px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold; background-color: #000000;" class="button-a"><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->ORDER NOW<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--></a></td></tr></table><br /></center></td></tr></tbody></table></td></tr></tbody></table><br /></td><br />', '');
+    }
     result = result.replace(Cregex, this.state.schoolColor);
     result = result.replace(SNregex, this.state.schoolName);
     result = result.replace(SLregex, this.state.schoolLink);
@@ -357,7 +360,7 @@ class App extends Component {
               />
               
               <div className={styles.space}>
-              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              <button className="btn-sm btn-secondary" onClick={this.valueToggler}>2 DTP Toggle</button>
               </div>
               {this.state.oneDTP ? null : (
                 <div>
@@ -533,7 +536,7 @@ class App extends Component {
               />
               
               <div className={styles.space}>
-              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              <button className="btn-sm btn-secondary" onClick={this.valueToggler}>2 DTP Toggle</button>
               </div>
               {this.state.oneDTP ? null : (
                 <div>
@@ -720,7 +723,7 @@ class App extends Component {
               />
               
               <div className={styles.space}>
-              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              <button className="btn-sm btn-secondary" onClick={this.valueToggler}>2 DTP Toggle</button>
               </div>
               {this.state.oneDTP ? null : (
                 <div>
@@ -829,13 +832,6 @@ class App extends Component {
                 rows="1"
               />
               <InputGeneric 
-                headline="School Hex:"
-                change={this.valueChangeHandler}
-                value={this.state.schoolColor}
-                name="schoolColor"
-                rows="1"
-              />
-              <InputGeneric 
                 headline="Headline:"
                 change={this.valueChangeHandler}
                 value={this.state.EESSGIAE_Headline}
@@ -913,8 +909,18 @@ class App extends Component {
                 rows="1"
               />
               <div className={styles.space}>
-              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              <button className="btn-sm btn-secondary mr-2" name="killAnnouncements" id={this.state.killAnnouncements} onClick={this.valueToggler}>Remove Announcements</button>
+              <button className="btn-sm btn-secondary" name="oneDTP" id={this.state.oneDTP} onClick={this.valueToggler}>2 DTP Toggle</button>
               </div>
+              {this.state.killAnnouncements ? null : (
+                <InputGeneric 
+                headline="School Hex:"
+                change={this.valueChangeHandler}
+                value={this.state.schoolColor}
+                name="schoolColor"
+                rows="1"
+              />
+              )}
               {this.state.oneDTP ? null : (
                 <div>
                   <InputGeneric 
@@ -1004,13 +1010,16 @@ class App extends Component {
                 click2={this.EESSGIAECol2ButtonPreview}
               />
             </div>
-            <EESSGIAEAnnc_ImageAnncPreview 
+            {this.state.killAnnouncements ? null : (
+
+              <EESSGIAEAnnc_ImageAnncPreview 
               color={this.state.schoolColor}
               schoolName={this.state.schoolName}
               font="white"
               buttonColor="#000000"
               click="null"
-            />
+              />
+              )}
           </div>
         </div>
     }
@@ -1077,7 +1086,7 @@ class App extends Component {
               />
               
               <div className={styles.space}>
-              <button className="btn-sm btn-secondary" onClick={this.changeToTwoDTP}>2 DTP Toggle</button>
+              <button className="btn-sm btn-secondary" onClick={this.valueToggler}>2 DTP Toggle</button>
               </div>
               {this.state.oneDTP ? null : (
                 <div>
